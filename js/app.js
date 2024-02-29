@@ -32,6 +32,7 @@ function CookieStand(name, minCustomers, maxCustomers, avgSales) {
 }
 
 CookieStand.prototype.generateCookieSales = function () {
+
   for (let i = 0; i < hours.length; i++) {
     // let thisHour = hours[0]
     let peopleThisHour = randomNumberGenerator(
@@ -55,11 +56,20 @@ CookieStand.prototype.render = function () {
   name.textContent = this.name;
   row.appendChild(name);
 
+  let total = document.createElement('td');
+  total.textContent = this.totalSales;
+  row.appendChild(total);
+
   for (let i = 0; i < this.cookiesEachHour.length; i++) {
     let td = document.createElement('td');
     td.textContent = this.cookiesEachHour[i];
     row.appendChild(td);
+
+    totalsPerHour[i] += this.cookiesEachHour[i];
   }
+
+
+
 };
 
 // let total = document.createElement('td');
@@ -107,6 +117,8 @@ function createTableFooter() {
     let td = document.createElement('td');
     td.textContent = totalsPerHour[i];
     row.appendChild(td);
+
+    totalSales += totalsPerHour[i];
   }
   let mainTotal = document.createElement('td');
   mainTotal.textContent = totalSales;
@@ -130,6 +142,7 @@ function randomNumberGenerator(minCustomers, maxCustomers) {
 //     storeObj.cookiesEachHour.push(cookiesThisHour);
 //   }
 // }
+// generateCookieSales();
 
 // displays results for each location
 // seattle.generateCookieSales();
