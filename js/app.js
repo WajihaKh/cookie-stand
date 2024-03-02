@@ -49,7 +49,6 @@ CookieStand.prototype.generateCookieSales = function () {
 
 CookieStand.prototype.render = function () {
   let body = document.getElementById('sales-body');
-
   let row = document.createElement('tr');
   body.appendChild(row);
 
