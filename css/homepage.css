@@ -15,6 +15,39 @@ nav {
     text-decoration: none;
     font: 15px;
     display: block;
-    margin-right: 30px;
+
+}
+
+main img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.line {
+    border-bottom: 1px solid black;
+}
+
+#location-info h3{
+    font-family: "righteous", sans-serif;
+    font-size: 22px;
+    margin: 28px;
+}
+
+#location-info p {
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 45px; 
+    margin-top: 5px;
+    color: #505255;
+}
+
+
+footer {
+    background-color: lightgray;
+    margin-top: 35px;
+    padding: 22px;
+    text-align: center;
+
 
 }

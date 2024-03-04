@@ -1,0 +1,70 @@
+
+h1 {
+    background-color: black;
+    font-family: "righteous", sans-serif;
+    color: salmon;
+    text-align: center;
+    padding: 35px;
+    font-size: 30px;
+}
+
+nav {
+    background-color: salmon;
+    padding: 5px;
+    text-decoration: none;
+    font: 15px;
+    display: block;
+
+}
+
+fieldset {
+    border: 1px solid black;
+    display: inline;
+    margin: 30px;
+    padding: 15px;
+    
+    button {
+        display: inline-block;
+    }
+    legend {
+        font-family: "righteous", sans-serif;
+        font-size: 14px;
+        color: salmon;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sales-table {
+    border-collapse: collapse;
+    width: 86%;
+    margin: 100px;
+}
+
+#sales-header {
+    background-color: grey;
+    color: white;
+}
+
+#sales-body td {
+    background-color: salmon;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+#sales-footer {
+    background-color: grey;
+    color: white;
+}
+
+footer {
+    background-color: lightgray;
+    margin-top: 35px;
+    padding: 22px;
+    text-align: center;
+}
